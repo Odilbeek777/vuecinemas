@@ -43,7 +43,7 @@ body {
      font-weight: 500;
      line-height: 12px;
      background: var(--lightor);
-     
+
      color: var(--black);
      transition: 0.3s;
      border-radius: 4px;
@@ -53,4 +53,17 @@ body {
      background: var(--bg);
      color: var(--white);
      font-size: 16px;
+}
+
+.title {
+     font-family: var(--CR);
+     font-size: 36px;
+     font-weight: 400;
+     line-height: 40px;
+     color: var(--lightor);
+     border-bottom: 2px solid var(--lightor);
+     width: max-content;
+     padding-bottom: 10px;
+     margin-bottom: 54px;
+     text-transform: capitalize;
 }
