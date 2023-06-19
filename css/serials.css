@@ -1,5 +1,5 @@
 .serials {
-    padding: 100px 0;
+    padding: 30px 0 63px;
 }
 
 .grid__layout {
@@ -31,17 +31,119 @@
     z-index: -1;
 }
 
-.card__body{
+.card__body {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.icon{
+.card__body-h {
+    font-family: var(--CB);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--white);
+
+}
+
+.icon {
     font-size: 40px;
 }
 
-.card:hover{
+.card:hover {
     background: #23232300;
+}
+
+.serial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-color: #232323CC;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.serial:hover {
+    background: #23232300;
+}
+
+.serial img {
+    z-index: -1;
+}
+
+.serial__desc {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.serial__h {
+    font-family: var(--CB);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 45px;
+    color: var(--white);
+}
+
+.serial__p {
+    font-family: var(--CR);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--white);
+    max-width: 1070px;
+}
+
+
+@media screen and (max-width:992px) {
+    .grid__layout {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .footer__wrap{
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 20px;
+    }
+}
+
+
+@media screen and (max-width:615px) {
+    .grid__layout {
+        padding: 0 15px;
+    }
+
+    .grid__layout {
+        grid-auto-rows: 150px;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .serial__p {
+        max-width: 400px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .card__body-h{
+        font-size: 20px;
+        
+    }
+    
+    
 }

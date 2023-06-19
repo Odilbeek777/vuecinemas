@@ -1,0 +1,27 @@
+.footer {
+    background: linear-gradient(90deg, #FF8C30 0%, #9F4700 100%);
+
+}
+
+.footer__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.footer__download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.footer__desc {
+    font-family: var(--CB);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--white);
+
+}
